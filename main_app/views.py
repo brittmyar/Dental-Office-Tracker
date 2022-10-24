@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Patient
 
 # Define the home view
@@ -23,3 +23,13 @@ def patients_detail(request, patient_id):
 class PatientCreate(CreateView):
     model = Patient
     fields = '__all__'
+    success_url = '/patients/'
+
+
+class PatientUpdate(UpdateView):
+  model = Patient
+  fields = ['age', 'allergies', 'insurance']
+
+class PatientDelete(DeleteView):
+    model = Patient
+    success = '/patients/'
