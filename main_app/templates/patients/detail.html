@@ -7,8 +7,8 @@
     <div class="card-content">
         <span class="card-title">{{ patient.name }}</span>
         <p>Age: {{ patient.age}}</p>
-        <p>Allergies: {{ patient.allergies }}</p>
-        <p>Insurance: {{ patient.insurance }}</p>
+        <p>Allergies: {{ patient.get_allergies_display }}</p>
+        <p>Insurance: {{ patient.get_insurance_display }}</p>
     </div>
     <div class="card-action">
         <a href="{% url 'patients_update' patient.id %}">Edit</a>

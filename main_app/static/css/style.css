@@ -2,13 +2,61 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image:url('https://i.pinimg.com/originals/41/66/5d/41665df6037592629ecd0c1e8833b463.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   main {
     flex: 1 0 auto;
   }
   
-  footer {
+footer.page-footer {
+    background-color: #01110f; 
     padding-top: 0;
     text-align: right;
+}
+
+
+  nav {
+    background-color: #011d1a;
+    color: black;
   }
+
+li {
+    color: black;
+  }
+
+label {
+    color: black;
+    font-size: medium;
+    font-weight: lighter;
+  }
+
+div.card-content {
+    background-color: rgb(134, 133, 136);
+    
+}
+
+span.card-title {
+    color: black;
+}
+ p {
+    color: black;
+    font-size:larger
+ }
+
+div.card-action {
+    background-color: rgb(13, 12, 22) !important;
+}
+
+table {
+    background-color: rgb(134, 133, 136);
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: 500;
+}

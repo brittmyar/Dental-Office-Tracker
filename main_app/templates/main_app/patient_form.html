@@ -7,11 +7,24 @@
 <h1>Add New Patient</h1>
 {% endif %}
 <!-- Leaving the action empty makes the form post to the same url used to display it -->
-<form action="" method="post">
+<form action="" method="post" class="create">
   {% csrf_token %}
   <table>
     {{ form.as_table }}
   </table>
-  <input type="submit" value="Submit!" class="btn" />
+  <input type="submit" value="Submit!" class="btn green" />
 </form>
+<script>
+// add additional JS to initialize select below
+    var selectEl = document.getElementById('id_allergies');
+    M.FormSelect.init(selectEl);
+
+    var selectEl = document.getElementById('id_insurance');
+    M.FormSelect.init(selectEl);
+</script>
+<style>
+    .create {
+        color: black;
+    }
+</style>
 {% endblock %}
