@@ -21,8 +21,15 @@
                 </ul>
                 <ul class="right">
                     <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'patients_create' %}">Add a New Patient</a></li>
+                    {% if user.is_authenticated %}
                     <li><a href="{% url 'index' %}">View All Patients</a></li>
+                    <li><a href="{% url 'patients_create' %}">Add a New Patient</a></li>
+                    <li><a href="{% url 'providers_create' %}">Add a Provider</a></li>
+                    <li><a href="{% url 'providers_index' %}">View All Providers</a></li>
+                    <li><a href="{% url 'logout' %}">Log Out</a></li>
+                    {% else %}
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                    {% endif %}
                   </ul>
             </div>
         </nav>

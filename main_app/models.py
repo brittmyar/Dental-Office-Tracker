@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from datetime import date
 from django.contrib.auth.models import User
 
 PROCEDURES = (
@@ -23,6 +24,7 @@ class Patient(models.Model):
     allergies = models.CharField(max_length=100) 
     insurance = models.CharField(max_length=100)
     providers = models.ManyToManyField(Provider)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
