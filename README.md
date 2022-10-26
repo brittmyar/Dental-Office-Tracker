@@ -16,4 +16,4 @@ I created the Dental Office Tracker for the employees who want to make the work 
 
 
 ## Wireframe
-https://trello.com/1/cards/6351b01188e59403f33c0f1b/attachments/6351b01188e59403f33c0f36/previews/6351b01288e59403f33c0f43/download/Device_Frames_(Community).png
+![Device Frames (Community)](https://user-images.githubusercontent.com/110944297/197908728-befd39fb-0032-4975-a877-5fa7c197a373.jpg)
