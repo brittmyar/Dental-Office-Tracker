@@ -10,7 +10,7 @@ I created the Dental Office Tracker for the employees who want to make the work 
 - Django
 - HTML
 - CSS
-- PostreSQL
+- PostgreSQL
 - Heroku
 - Materialize
 
