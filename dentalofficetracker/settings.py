@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'dentalofficetracker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd6ugv4b59mmmph',
         'USER': 'uxvjrvrmactxsw',
         'PASSWORD': '642ace07fdf81478cc723d5c28e7b35cd8521174f05ed3413e4671cdadacd0c5',
@@ -124,6 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+django_heroku.settings(locals())
 LOGIN_REDIRECT_URL = '/patients/'
 LOGOUT_REDIRECT_URL = '/'
 
