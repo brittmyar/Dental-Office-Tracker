@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-b77+d_4!4j9ag*&%+7_4+5zwl4-(n+4$v-g-&1hauyestvva%4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dentalofficetracker.herokuapp.com']
 
 
 # Application definition
@@ -77,10 +79,10 @@ WSGI_APPLICATION = 'dentalofficetracker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dentalofficetracker',
-        'USER': 'postgres',
-        'PASSWORD': '1',
-        'host': 'localhost',
+        'NAME': 'd6ugv4b59mmmph',
+        'USER': 'uxvjrvrmactxsw',
+        'PASSWORD': '642ace07fdf81478cc723d5c28e7b35cd8521174f05ed3413e4671cdadacd0c5',
+        'host': 'ec2-52-3-60-53.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -121,6 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 LOGIN_REDIRECT_URL = '/patients/'
 LOGOUT_REDIRECT_URL = '/'
 
