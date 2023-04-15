@@ -3,7 +3,7 @@
 ![dot](https://user-images.githubusercontent.com/110944297/197906289-6e2cef8c-26e8-4286-9092-2470158e5a74.JPG)
 
 ## Description
-I created the Dental Office Tracker for the employees who want to make the work life easier by simply logging into an app where they can track their patients with each visit instead of grabbing 30 plus charts for the day.
+- This project is a web application built using Python, Django, and PostgreSQL. It is designed to help dental offices keep track of patient information, procedures, and providers. Users can edit, delete, add new patients, procedures, and providers to the system.
 
 ## Technologies Used
 - Python
