@@ -21,7 +21,7 @@
 - User can add a procedure and a provider for the patient
 
 ## PostgreSQL
-- PostgreSQL is used as the database management system for this project. It is used to store and manage data related to patients, procedures, and providers.
+- PostgreSQL is used as the database management system for this project. I used to store and manage data related to patients, procedures, and providers.
 When a user adds a new patient, procedure, or provider, the data is saved to the PostgreSQL database. When a user edits or deletes an existing patient, procedure, or provider, the changes are made to the relevant data in the PostgreSQL database.
 
 
